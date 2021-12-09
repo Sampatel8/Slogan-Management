@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LOZ-MH-yye">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Slogan Management-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Slogan_Management" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZA-bJ-3PK">
+                                <rect key="frame" x="80" y="215" width="160" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <state key="normal" title="Add Slogan">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="H6k-39-W7s" kind="show" id="kZY-db-rct"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaG-V0-GPl">
+                                <rect key="frame" x="80" y="303" width="160" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <state key="normal" title="Show Slogan">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="1Je-o3-20X" kind="show" id="c61-Ck-8ME"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🙏🏻WELCOME🙏🏻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yX3-fb-Kvh">
+                                <rect key="frame" x="88" y="90" width="145" height="22"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yX3-fb-Kvh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="16Y-hK-Lmh"/>
+                            <constraint firstItem="BZA-bJ-3PK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Ve-Vx-Fru"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BZA-bJ-3PK" secondAttribute="trailing" constant="80" id="5oX-7g-iNL"/>
+                            <constraint firstItem="CaG-V0-GPl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="8qC-VL-MVj"/>
+                            <constraint firstItem="CaG-V0-GPl" firstAttribute="top" secondItem="BZA-bJ-3PK" secondAttribute="bottom" constant="58" id="TUG-IY-fjp"/>
+                            <constraint firstItem="yX3-fb-Kvh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="WYM-ZF-skB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CaG-V0-GPl" secondAttribute="trailing" constant="80" id="g3z-dY-iDQ"/>
+                            <constraint firstItem="BZA-bJ-3PK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="jjW-NP-aBQ"/>
+                            <constraint firstItem="BZA-bJ-3PK" firstAttribute="top" secondItem="yX3-fb-Kvh" secondAttribute="bottom" constant="103" id="uZv-YS-BWp"/>
+                            <constraint firstItem="CaG-V0-GPl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wkO-9A-UVw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Slogan Management" id="XJV-UO-jxX">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="rJd-RM-bTZ"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057.5" y="-259.85915492957747"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="z1o-TY-MKa">
+            <objects>
+                <viewController id="H6k-39-W7s" customClass="ViewController" customModule="Slogan_Management" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mIR-gE-xBG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Slogan" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HLx-LQ-upb">
+                                <rect key="frame" x="16" y="163" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADD NEW SlOGAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZ7-hC-kcg">
+                                <rect key="frame" x="16" y="134" width="160" height="21"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbS-e2-FoT">
+                                <rect key="frame" x="119" y="201" width="82" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="H6k-39-W7s" eventType="touchUpInside" id="mug-Hk-QK9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cc4-Gg-Yca" firstAttribute="trailing" secondItem="mbS-e2-FoT" secondAttribute="trailing" constant="119" id="3Y9-nt-VCk"/>
+                            <constraint firstItem="HLx-LQ-upb" firstAttribute="centerX" secondItem="mIR-gE-xBG" secondAttribute="centerX" id="8dt-BG-k5G"/>
+                            <constraint firstItem="HLx-LQ-upb" firstAttribute="leading" secondItem="cc4-Gg-Yca" secondAttribute="leading" constant="16" id="8yT-nd-3HU"/>
+                            <constraint firstItem="cc4-Gg-Yca" firstAttribute="trailing" secondItem="cZ7-hC-kcg" secondAttribute="trailing" constant="144" id="DQh-9K-JiV"/>
+                            <constraint firstItem="mbS-e2-FoT" firstAttribute="leading" secondItem="cc4-Gg-Yca" secondAttribute="leading" constant="119" id="SLT-sl-R6k"/>
+                            <constraint firstItem="cc4-Gg-Yca" firstAttribute="trailing" secondItem="HLx-LQ-upb" secondAttribute="trailing" constant="16" id="Snn-tb-yx7"/>
+                            <constraint firstItem="mbS-e2-FoT" firstAttribute="top" secondItem="HLx-LQ-upb" secondAttribute="bottom" constant="8" id="XhM-Rk-8kg"/>
+                            <constraint firstItem="cZ7-hC-kcg" firstAttribute="top" secondItem="cc4-Gg-Yca" secondAttribute="top" constant="70" id="aUC-GY-Kgs"/>
+                            <constraint firstItem="HLx-LQ-upb" firstAttribute="top" secondItem="cZ7-hC-kcg" secondAttribute="bottom" constant="8" id="evl-9o-wfo"/>
+                            <constraint firstItem="cZ7-hC-kcg" firstAttribute="leading" secondItem="cc4-Gg-Yca" secondAttribute="leading" constant="16" id="f3S-i4-moJ"/>
+                            <constraint firstItem="mbS-e2-FoT" firstAttribute="centerX" secondItem="mIR-gE-xBG" secondAttribute="centerX" id="zhW-15-0NY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cc4-Gg-Yca"/>
+                    </view>
+                    <connections>
+                        <outlet property="Slogantextfield" destination="HLx-LQ-upb" id="gAw-6j-llj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gXH-nt-Mv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1980" y="-803.87323943661977"/>
+        </scene>
+        <!--Slogan Table View Controller-->
+        <scene sceneID="hCH-GL-osa">
+            <objects>
+                <tableViewController id="1Je-o3-20X" customClass="SloganTableViewController" customModule="Slogan_Management" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="z25-CB-jef">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="120" id="WVi-Vr-hxj">
+                                <rect key="frame" x="0.0" y="28" width="320" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WVi-Vr-hxj" id="4tV-dq-E0L">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="119.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="H6k-39-W7s" kind="show" identifier="editData" id="7FE-RC-vvH"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1Je-o3-20X" id="N28-8b-ASO"/>
+                            <outlet property="delegate" destination="1Je-o3-20X" id="e97-yx-uM9"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="tableview" destination="z25-CB-jef" id="KQr-ha-BFa"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7sD-Re-XjH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1980" y="21.12676056338028"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ecz-ld-QU1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LOZ-MH-yye" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DOq-Z3-wfG">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="B8M-5A-hDO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bug-Sz-R7e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="-259.85915492957747"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="7FE-RC-vvH"/>
+    </inferredMetricsTieBreakers>
+</document>
